@@ -127,9 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* start of css */
-
+/* start of grid layout for admin page */
 body {
   display: grid;
   gap: 10px;
@@ -138,12 +136,46 @@ body {
   height: 100vh;
   font-family: "Roboto-Bold";
 }
+/* start of header  */
 header {
   grid-column: 2/3;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
+header .search-card {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  height: 20px;
+}
+
+header .top-right-nav {
+  display: grid;
+  grid-template-columns: 17px 30px 100px;
+  column-gap: 10px;
+}
+header .user-profile-info {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 10px;
+}
+header .user-profile-info .profile-card {
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+header .upload-card {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  column-gap: 10px;
+}
+button {
+  background-color: rgb(57, 139, 239);
+  border-radius: 15px;
+  height: 30px;
+  color: white;
+}
+/* start of sidebar */
 aside {
   display: grid;
   row-gap: 30px;
