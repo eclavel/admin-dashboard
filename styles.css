@@ -136,6 +136,7 @@ body {
   grid-template-columns: 0.5fr 3fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
+  font-family: "Roboto-Bold";
 }
 header {
   grid-column: 2/3;
@@ -145,16 +146,19 @@ header {
 }
 aside {
   display: grid;
-  gap: 10px;
+  row-gap: 30px;
   grid-template-rows: 50px 200px 100px;
   grid-column: 1/2;
   grid-row: 1/3;
   background-color: teal;
-}
-aside .sidebar-logo {
-  display: grid;
+  justify-content: center;
 }
 aside .sidebar-content {
   display: grid;
-  gap: 5px;
+  row-gap: 15px;
+  align-self: center;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(fonts/Roboto/Roboto-Bold.ttf);
 }
