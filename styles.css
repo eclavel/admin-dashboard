@@ -139,18 +139,24 @@ body {
 /* start of header  */
 header {
   grid-column: 2/3;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+header .header-top-row,
+header .header-bottom-row {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
   align-items: center;
 }
-header .search-card {
+header .header-top-row .search-card {
   display: grid;
+  flex: 0.75;
   grid-template-columns: 20px 1fr;
   height: 20px;
 }
 
-header .top-right-nav {
+header .header-top-row .top-right-nav {
   display: grid;
   grid-template-columns: 17px 30px 100px;
   column-gap: 10px;
@@ -174,6 +180,10 @@ button {
   border-radius: 15px;
   height: 30px;
   color: white;
+}
+input {
+  background-color: rgb(241, 235, 235);
+  border-radius: 10px;
 }
 /* start of sidebar */
 aside {
@@ -200,6 +210,26 @@ aside .sidebar-content {
   padding-left: 15px;
   color: white;
 }
+/* main content */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(241, 235, 235);
+}
+main .project-conatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+main .project-conatiner .project-card {
+  border: 2px solid black;
+  background-color: white;
+}
+main .announcement-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 @font-face {
   font-family: "Roboto-Bold";
   src: url(fonts/Roboto/Roboto-Bold.ttf);
