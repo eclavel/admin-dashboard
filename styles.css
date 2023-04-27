@@ -234,7 +234,7 @@ aside .sidebar-content {
 /* main content */
 main {
   display: grid;
-  grid-template-columns: 2fr 0.75fr;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
   background-color: rgb(220, 232, 243);
 }
@@ -250,9 +250,12 @@ main .project-container .project-cards {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
+main .project-container .project-cards .project-card img {
+  width: 200px;
+}
 main .project-container .project-cards .project-card {
-  border: 1px solid black;
   background-color: white;
+  color: black;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -261,7 +264,9 @@ main .project-container .project-cards .project-card {
   padding: 20px;
   gap: 10px;
 }
-
+main .project-container .project-cards .project-card .project-card-links img {
+  width: 20px;
+}
 /* announcement container */
 main .main-right-container {
   display: grid;
