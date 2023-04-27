@@ -165,21 +165,30 @@ header .header-top-row .search-card input {
   flex: 1;
   max-width: 350px;
 }
-header .header-top-row .search-card img,
-header .header-top-row .top-right-nav img {
+header .header-top-row .search-card > img,
+header .header-top-row .top-right-nav > img {
   width: 20px;
+}
+header .header-top-row .top-right-nav .user-profile-img img {
+  width: 40px;
+  border-radius: 20px;
 }
 header .header-top-row .top-right-nav {
   display: grid;
-  grid-template-columns: 20px 30px 100px;
+  grid-template-columns: 20px 40px 100px;
+  align-items: center;
   column-gap: 10px;
 }
-header .user-profile-info {
+header .header-bottom-row .user-profile-info {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 60px 1fr;
   column-gap: 10px;
 }
-header .user-profile-info .profile-card {
+header .header-bottom-row .user-profile-info .user-profile-pic img {
+  width: 60px;
+  border-radius: 30px;
+}
+header .header-bottom-row .user-profile-info .profile-card {
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
 }
