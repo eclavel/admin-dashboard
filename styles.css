@@ -279,6 +279,7 @@ main .main-right-container {
   grid-template-rows: repeat(2, 350px);
   /* padding shorthand: top right bottom left */
   padding: 30px 30px 0px 0px;
+  margin-right: 20px;
   row-gap: 10px;
   font-size: small;
 }
