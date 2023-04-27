@@ -163,7 +163,7 @@ header .header-top-row .search-card {
 }
 header .header-top-row .search-card input {
   flex: 1;
-  max-width: 250px;
+  max-width: 350px;
 }
 header .header-top-row .search-card img,
 header .header-top-row .top-right-nav img {
