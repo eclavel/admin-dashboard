@@ -145,14 +145,12 @@ aside {
 /* start of header  */
 header {
   grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: white;
 }
 header .header-top-row,
 header .header-bottom-row {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px 10px 30px;
@@ -163,12 +161,13 @@ header .header-top-row .search-card {
   height: 20px;
   gap: 10px;
 }
-header .header-top-row .search-card img {
+header .header-top-row .search-card img,
+header .header-top-row .top-right-nav img {
   width: 20px;
 }
 header .header-top-row .top-right-nav {
   display: grid;
-  grid-template-columns: 17px 30px 100px;
+  grid-template-columns: 20px 30px 100px;
   column-gap: 10px;
 }
 header .user-profile-info {
