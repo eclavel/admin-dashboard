@@ -284,18 +284,25 @@ main .main-right-container {
 main .main-right-container .top-container,
 main .main-right-container .bottom-container {
   display: grid;
-  grid-template-rows: 20px 0.75fr;
+  grid-template-rows: 20px repeat(auto-fit, minmax(500px, 0.5fr));
 }
 
 main .main-right-container .trending-card,
 main .main-right-container .announcement-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   border: 1px solid black;
   background-color: white;
   border-radius: 15px;
-  padding: 15px 15px;
+  padding: 0 15px;
+  overflow: scroll;
+  width: 100%;
+}
+main .main-right-container .announcement-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .main-right-container .top-container .announcement-card div {
   flex: 1;
