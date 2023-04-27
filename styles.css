@@ -276,6 +276,7 @@ main .project-container .project-cards .project-card .project-card-links img {
 /* announcement container */
 main .main-right-container {
   display: grid;
+  grid-template-rows: repeat(2, 350px);
   /* padding shorthand: top right bottom left */
   padding: 30px 30px 0px 0px;
   row-gap: 10px;
@@ -284,7 +285,7 @@ main .main-right-container {
 main .main-right-container .top-container,
 main .main-right-container .bottom-container {
   display: grid;
-  grid-template-rows: 20px repeat(auto-fit, minmax(500px, 0.5fr));
+  grid-template-rows: 20px repeat(auto-fit, minmax(300px, 1fr));
 }
 
 main .main-right-container .trending-card,
@@ -308,6 +309,11 @@ main .main-right-container .top-container .announcement-card div {
   flex: 1;
   border-bottom: 1px solid rgb(242, 215, 242);
   padding: 20px 0;
+}
+main .main-right-container .bottom-container .trending-card {
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 @font-face {
   font-family: "Roboto-Bold";
