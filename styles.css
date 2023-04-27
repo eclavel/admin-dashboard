@@ -251,7 +251,7 @@ main .project-container .project-cards {
   gap: 20px;
 }
 main .project-container .project-cards .project-card img {
-  width: 200px;
+  width: 250px;
 }
 main .project-container .project-cards .project-card {
   background-color: white;
@@ -260,9 +260,15 @@ main .project-container .project-cards .project-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   gap: 10px;
+}
+main .project-container .project-cards .project-card h4,
+main .project-container .project-cards .project-card img {
+  align-self: center;
+}
+main .project-container .project-cards .project-card .project-card-links {
+  align-self: flex-end;
 }
 main .project-container .project-cards .project-card .project-card-links img {
   width: 20px;
