@@ -146,20 +146,24 @@ aside {
 header {
   grid-column: 2/3;
   display: grid;
+  grid-template-rows: 1fr 1fr;
   background-color: white;
+  gap: 10px;
+  padding: 10px 30px 10px 30px;
 }
 header .header-top-row,
 header .header-bottom-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px 10px 30px;
 }
 header .header-top-row .search-card {
-  display: grid;
-  grid-template-columns: 20px 1fr;
-  height: 20px;
-  gap: 10px;
+  display: flex;
+  flex: 1;
+}
+header .header-top-row .search-card input {
+  flex: 1;
+  max-width: 250px;
 }
 header .header-top-row .search-card img,
 header .header-top-row .top-right-nav img {
@@ -284,7 +288,7 @@ main .main-right-container .announcement-card {
 }
 main .main-right-container .top-container .announcement-card div {
   flex: 1;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgb(242, 215, 242);
   padding: 20px 0;
 }
 @font-face {
