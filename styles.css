@@ -256,7 +256,7 @@ main .project-container {
 }
 main .project-container .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 0.5fr));
   gap: 20px;
 }
 main .project-container .project-cards .project-card img {
@@ -266,18 +266,18 @@ main .project-container .project-cards .project-card {
   background-color: white;
   color: black;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   padding: 20px;
   gap: 10px;
 }
-main .project-container .project-cards .project-card h4,
-main .project-container .project-cards .project-card img {
-  align-self: center;
+main .project-container .project-cards .project-card .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .project-container .project-cards .project-card .project-card-links {
-  align-self: flex-end;
+  display: flex;
+  justify-content: end;
 }
 main .project-container .project-cards .project-card .project-card-links img {
   width: 25px;
@@ -324,7 +324,6 @@ main .main-right-container .top-container .announcement-card div {
 }
 main .main-right-container .bottom-container .trending-card {
   row-gap: 20px;
-  align-items: center;
   justify-content: space-evenly;
 }
 main .main-right-container .bottom-container .trending-card .user-trending {
