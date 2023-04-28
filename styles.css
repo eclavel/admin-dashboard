@@ -256,11 +256,11 @@ main .project-container {
 }
 main .project-container .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 0.5fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
   gap: 20px;
 }
 main .project-container .project-cards .project-card img {
-  width: 325px;
+  width: 275px;
 }
 main .project-container .project-cards .project-card {
   background-color: white;
